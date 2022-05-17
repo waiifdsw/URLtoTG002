@@ -12,7 +12,9 @@ logger = logging.getLogger(__name__)
 
 # audio uploader
 async def upaudio(client, message, msg, file_loc, fname=None):
-    
+    logger.info(message)
+    return
+    #
     await msg.edit(f"✏️ Editing Metadata ...")
     
     title = None
